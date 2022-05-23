@@ -1,27 +1,46 @@
 <html>
-    <!-- WARNING: Do not change anything in the head seciton -->
+    <!-- WARNING: Do not change anything in the head seciton --> 
+     
+   
     <head>
         <title>Math Card Bop</title>
         <script type="text/javascript" src="https://static.codehs.com/gulp/80550f5fc4071985bfef352d04f005ca3de931d3/chs-js-lib/chs.js"></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet"> 
     </head>
-
-    <body>
+    <body id="bod">
+        <input class="disabled" type="color" id="colorInputColor"  value="#ff0000">
+       <input type= "button" class="disabled"id="colorButton" value="Click to Change Color" onclick="changeColor()">
         <!-- Add your own title here -->
-        <h1>Math Card Bop</h1>
-
-        <!-- You can change these numbers to size the canvas -->
+        <h1 id="hone"class='glow'>Math Card Bop</h1>
+        <div class="buttoncontainer">
+            <button class="button button1 cardCurse " id="myBtn">Continue</button>  
+             <button class="button button1 disabled cardCurse" id="secB">Continue2</button>
+            <button class="button button1 disabled shadow cardCurse" id="thirdB">Shop</button>
+            <button class="button button1 disabled shadow cardCurse" id="buyB">Buy</button>
+            <button class="button button1 disabled cardCurse" id="fourthB">Tutorial</button>
+            <button class="button button1 disabled cardCurse" id="exitButton">Exit</button>
+           <button class="button button1 disabled cardCurse" id="drew">Draw</button>
+           <button class="button button1 disabled cardCurse" id="better">Bet</button>
+            <button class="button button1 disabled cardCurse" id="menud">Menu</button>
+   <button class="button button1 disabled cardCurse" id="menu">Menu</button>
+   <button class="button button1 cardCurse" id="Dark">Dark Mode</button>
+        </div>
+        <!-- You can change these numbers to size the canvas --> 
+        <div class="canvasthing">
         <canvas
             width="600"
             height="600"
             class="codehs-editor-canvas">
         </canvas>
-
+        </div>
         <!-- Remove this if you do not want a console -->
-        <pre id="console"></pre>
 
         <!-- Imports and runs your game! do not touch -->
         <script src="script.js"></script>
         <script src="game.js"></script>
+        <script src="cookies.js"></script>
     </body>
 </html>

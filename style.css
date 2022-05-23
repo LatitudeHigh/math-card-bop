@@ -2,6 +2,7 @@ canvas {
     border: 1px solid black;
     display: inline-block;
     vertical-align: top;
+    box-shadow: 0 0 10px 5px red
 }
 
 /* REMOVE if you don't want to show console */
@@ -11,4 +12,95 @@ pre {
     width: 400px;
     height: 500px;
     background-color: #F5F5F5;
+}
+.glow{
+  font-size: 40px;
+  color: #12322;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px  #d3041c , 0 0 40px  #d3041c , 0 0 50px  #d3041c , 0 0 60px  #d3041c , 0 0 70px  #d3041c ;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px  #9a0414 , 0 0 40px  #9a0414 , 0 0 50px  #9a0414 , 0 0 60px  #9a0414 , 0 0 70px  #9a0414 , 0 0 80px  #9a0414 ;
+  }
+}
+body {
+    background-color: #AAAAAA;
+    cursor: url('/images/BlackCursor.png'), default;
+
+}
+        h1 {color: black}
+h1 {font-family: 'My Soul', cursive;}
+.canvasthing{
+    text-align: center
+}
+.button {
+  /*display: flex*/
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: black; 
+  background-color: white;
+  border: 2px solid #9a0414;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-bottom:50px;
+}
+
+.button1:hover {
+  background-color: #d3041c;
+  color: white;
+}
+.button:active {
+  background-color: #d3041c;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.buttoncontainer{
+    text-align: center;
+}
+.disabled {
+    display:none;
+  /*opacity: 0.6;
+  cursor: not-allowed;*/
+}
+.dark-mode {
+      background-color: black;
+}
+.dark-background{
+    background: url("/images/woodBackground.jpg");
+}
+.dark {
+  border: 2px solid black;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  background-color: #aa2521;
+  color: black;
+  box-shadow: 0 9px #7d1c19;
+  border-radius: 15px;
+    margin-bottom:50px;
+}
+.dark:hover{
+    color: gold;
+}
+.dark:active {
+  background-color: #aa2521;
+  box-shadow: 0 5px #681715;
+  transform: translateY(4px);
+}
+.cardCurse{
+    cursor: url('/images/CardButton.png'), move;
+}
+.difCursor{
+    cursor: url('/images/RedCursor.png'), default;
 }
